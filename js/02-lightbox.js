@@ -4,7 +4,7 @@ const galary = document.querySelector(".gallery")
 function renderImagies(array){
     const template =array.map((el)=>{return `<li class="gallery__item">
     <a class="gallery__link" href=${el.original}>
-       <img class="gallery__image" src=${el.preview} alt=${el.descriptin} />
+       <img class="gallery__image" src=${el.preview} alt=${el.description} />
     </a>
  </li>`})
     .join("")
